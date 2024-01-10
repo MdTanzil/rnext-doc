@@ -32,6 +32,26 @@ Here is the code for the VS Code snippets as well.
 }
 ```
 
+Visual Studio Code snippets that facilitate the automatic naming of functions based on the filename, enhancing ease of use and productivity.
+
+```json
+{
+  "React functional component": {
+	  "prefix": "rfc",
+	  "body": [
+		"export default function ${1:$TM_FILENAME_BASE}() {",
+		"    return (",
+		"        <div>",
+		"            ${2:Hello $TM_FILENAME_BASE}",
+		"        </div>",
+		"    );",
+		"}"
+	  ],
+	  "description": "React functional component with a div in return"
+	}
+}
+```
+
 VS Code Settings
 
 ```jsx
